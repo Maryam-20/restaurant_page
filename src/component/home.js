@@ -2,7 +2,7 @@ import playIconUrl from "../asset/play.png";
 import foodImg from "../asset/ramen-dark2.jpeg";
 import spoonIcon from "../asset/silverware.svg";
 
-function createNavBar () {
+function createNavBar (onNavigate) {
     const navContainer = document.createElement("div");
     navContainer.setAttribute("id", "navContainer");
 
@@ -21,6 +21,10 @@ function createNavBar () {
         anchor.textContent = item;
         listItem.appendChild(anchor)
         navList.appendChild(listItem);
+
+        anchor.addEventListener("click",(e) => {
+            onNavigate(item.toLowerCase())
+        })
 
     });
 
@@ -81,7 +85,7 @@ function createHero() {
     return heroContainer;
 }
 
-function ramenSection() {
+function createRamenSection() {
     const ramen_section = document.createElement("div");
     ramen_section.setAttribute("id", "ramen_section");
 
@@ -160,5 +164,12 @@ function ramenSection() {
     ramen_section.append(ramen_grid1, ramen_grid2);
 
     return ramen_section;
-}
-export {createNavBar, createHero, ramenSection}
+};
+
+function createHomePage(onNavigate) {
+    const wrapper = document.createElement("div");
+    wrapper.append(createNavBar(onNavigate), createHero(), createRamenSection())
+
+    return wrapper;
+};
+export {createHomePage, createNavBar}
