@@ -6,6 +6,9 @@
     box-sizing: border-box;
     
 }
+* {
+    /* outline: 2px solid white; */
+}
 :root {
     --bg-dark:#09090f;
     --primary-color:#ff2d78;
@@ -67,6 +70,7 @@ html, body {
     margin-top: 20px;
 }
 
+/* HERO SECTION STYLING */
 #heroContainer {
     display: grid;
     justify-content: center;
@@ -158,6 +162,128 @@ html, body {
     letter-spacing: 0.2rem;
     margin-top: 15px;
  }
+
+ /* RAMEN SECTION STYLING */
+ #ramen_section {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin: 10rem auto 30px auto;
+ }
+
+#ramenGrid1 {
+    background-image: url(../asset/ramen-dark.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+     border: 1px solid var(--primary-color);
+    height: 90dvh;
+    flex-direction: column;
+    justify-content: flex-end;
+} 
+
+.ramenText {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 0.1rem;
+    color: var(--txt-light);
+    word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.ramen_desc {
+    width: 35rem;
+    color: var(--txt-light);
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 1.3rem;
+    word-spacing: 0.1rem;
+    margin-left: 3rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 1rem;
+}
+
+.ramen_div2 {
+    display: flex;
+    border: 1px solid var(--secondary-color);
+    height: 42dvh;
+    margin-bottom: 22px;
+    gap: 13px;
+}
+
+.food_img {
+    width: 8rem;
+    height: 12rem;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.available_text_div {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 30px;
+}
+
+.available_text {
+    color: var(--secondary-color);
+    font-size: 0.3em;
+    letter-spacing: 0.1rem;
+}
+
+.food_title {
+    color: var(--txt-light);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10px auto;
+}
+.ratingDiv {
+    border: 1px solid var(--primary-color);
+    height: 42dvh;
+}
+.food_desc {
+    color: #e49ece;
+    opacity: 2px;
+    font-size: 0.8rem;
+}
+
+.spoon_div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left:25px;
+    margin-right: 25px;
+}
+
+.spoonIconWrapper {
+    width:50px;
+    height: 40px;
+    fill: var(--primary-color);
+}
+.rating_text {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 10px 25px;
+
+}
+.rating_white_text {
+    color: var(--txt-light);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 20px 25px;
+
+}
+
+.rating_desc {
+    color: var(--text-strawberry);
+    margin: auto 25px;
+    font-size: 0.9rem;
+    font-weight: 100;
+
+
+}
 
 
 

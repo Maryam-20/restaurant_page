@@ -34,9 +34,16 @@ export default {
       },
 
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.svg$/i,
+        type: "asset/source",
+      },
+      
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+
+      
     ],
   },
 };
