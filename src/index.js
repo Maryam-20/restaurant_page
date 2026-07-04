@@ -1,10 +1,12 @@
 import { createHomePage } from "./component/home.js";
 import { createMenuPage } from "./component/menu.js";
+import { createContactPage } from "./component/contact.js";
 import "./styles/main.css"
 
 const routes = {
     "home": createHomePage,
     "menu": createMenuPage,
+    "contact": createContactPage,
    
 }
 

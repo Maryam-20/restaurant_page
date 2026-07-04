@@ -13,7 +13,8 @@ export default {
 
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/index.html"]
+    watchFiles: ["./src/index.html"],
+    historyApiFallback: true,
   },
 
   plugins: [
@@ -37,7 +38,7 @@ export default {
         test: /\.svg$/i,
         type: "asset/source",
       },
-      
+
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
