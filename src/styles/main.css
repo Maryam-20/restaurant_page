@@ -1,19 +1,26 @@
+@import url('https://googleapis.com');
+
 *, **, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 :root {
     --bg-dark:#09090f;
     --primary-color:#ff2d78;
     --secondary-color: #01dcad;
     --txt-light: #ffffff;
+    --text-strawberry:#e49ece;
 }
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--bg-dark);
+    font-family: 'DM Sans', sans-serif;
+    
 }
 
 #navContainer {
@@ -41,6 +48,7 @@ html, body {
 .anchorList {
     text-decoration: none;
     color: var(--txt-light);
+    font-weight: 600;
 }
 .anchorList:hover {
     text-decoration: underline;
@@ -58,4 +66,98 @@ html, body {
     text-align: center;
     margin-top: 20px;
 }
+
+#heroContainer {
+    display: grid;
+    justify-content: center;
+    margin-top: 5rem;
+  
+}
+
+.sectionText {
+    border: 0.2px inset var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 0.3rem;
+    margin-top: 10px;
+    width: 40%;
+    margin-left:6.5rem;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.neon {
+    font-weight: 800;
+    color: var(--txt-light);
+    text-align: center    ;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+}
+.tokyo {
+    font-weight: 900;
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+.cuisine {
+    color: var(--text-strawberry);
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.21rem;
+    font-size: 0.7rem;
+}
+
+.viewContainer {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.view {
+    border: 0.5px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    width: 7rem;
+    height: 1.5rem;
+}
+ .iconContainer {
+    border: 2px solid var(--secondary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+ }
+ .icon {
+    width: 0.7rem ;
+    height: 0.7rem;
+ }
+ .experience {
+    color: var(--secondary-color);
+    margin-left: 15px;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    margin-top: 15px;
+ }
+
+
 
